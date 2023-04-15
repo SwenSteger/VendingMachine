@@ -1,9 +1,6 @@
-﻿// Task1.Run();
-// Task2.Run();
-// Task3.Run();
-// Task4.Run();
-// Task5.Run();
-// Task6.Run();
+/*
+TODO: Still need to abstract the Console.WriteLine() stuff
+*/
 
 using VendingMachineApp.Solid;
 using VendingMachineApp.Solid.Interfaces;
