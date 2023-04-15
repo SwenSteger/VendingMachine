@@ -14,21 +14,15 @@ public class Task1
 {
 	public static void Run()
 	{
-		Dictionary<string, double> items = new Dictionary<string, double>
-		{
-			{ "Coke", 1.5 },
-			{ "Pepsi", 1.5 },
-			{ "Water", 1.0 },
-			{ "Chips", 0.5 },
-			{ "Chocolate", 0.75 }
-		};
+		var names = new string[] { "Coke", "Pepsi", "Water", "Chips", "Chocolate" };
+		var prices = new double[] { 1.5, 1.5, 1.0, 0.5, 0.75 };
 
 		while (true)
 		{
 			Console.WriteLine("\nVending Machine Menu:");
-			foreach (var item in items)
+			for (int i = 0; i < names.Length; i++)
 			{
-				Console.WriteLine($"{item.Key} - ${item.Value}");
+				Console.WriteLine($"{names[i]} - ${prices[i]}");
 			}
 
 			Console.WriteLine("Enter the item name to purchase or type 'exit' to quit:");
@@ -39,9 +33,10 @@ public class Task1
 				break;
 			}
 
-			if (items.ContainsKey(userInput))
+			if (names.Contains(userInput))
 			{
-				Console.WriteLine($"You have selected: {userInput}, Price: ${items[userInput]}");
+				var index = Array.IndexOf(names, userInput);
+				Console.WriteLine($"You have selected: {userInput}, Price: ${prices[index]}");
 			}
 			else
 			{
