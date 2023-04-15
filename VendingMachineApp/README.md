@@ -1,5 +1,5 @@
 # VendingMachineApp
-### C# LessonTasks Reference and example-code
+### C# LessonTasks reference and example-code
 
 This project is just a simple console application that simulates a vending machine. It is meant to be a simple project that can be used to practice the concepts learned in the C# lessons.
 The gradual learning process throughout these tasks is meant to help you practice the concepts learned in the lessons and to help you build a solid foundation for your C# skills.
