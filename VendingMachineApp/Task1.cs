@@ -1,7 +1,7 @@
 ﻿/*
 Task 1: Creating a simple menu with items to purchase in the main method:
 
-- Initialize a list of available items and their prices. 
+- Initialize a list or array of available items and their prices. 
 - Display the menu to the user.
 - Prompt the user to enter their choice.
 - Display the selected item and its price.
